@@ -94,3 +94,28 @@
 	
 }/*max-width:320px*/
 
+@media (max-width: 768px) {
+    .skills-wrapper {
+        flex-direction: column; /* Stack skill sections vertically */
+        align-items: center; /* Center skill sections horizontally */
+    }
+
+    .skill-section {
+        width: 90%; /* Adjust width on smaller screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .skill-section {
+        flex: 1 1 45%;
+		max-width: none; 
+    }
+}
+
+@media (max-width: 767px) {
+    .skill-section {
+        flex: 1 1 100%; 
+		max-width: none;
+    }
+}
+

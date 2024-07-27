@@ -18,7 +18,7 @@
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
        
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<!--flat icon css-->
@@ -52,7 +52,15 @@
         <![endif]-->
 
     </head>
-	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H1K3V4VMNC"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-H1K3V4VMNC');
+	</script>
 	<body>
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -131,15 +139,6 @@
 								<p>
 									I am an undergraduate junior pursuing a Dual-Degree in Computer Science and Economics at Florida State University. As an innovation-driven leader, I am dedicated to using AI/ML to expand educational resources and simplify life. I will be graduating in Spring 2026 and am seeking Project Management and Software Engineer internship roles for Summer 2025.
 								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>ashley.oliveiraa@outlook.com</p>
-										</div>
-									</div>
-									
-								</div>
 							</div>
 						</div>
 						<div class="col-sm-offset-1 col-sm-5">
@@ -147,18 +146,26 @@
 								<img src="assets/images/about/IMG_6131.jpg" alt="profile_image">
 								<div class="about-list-icon">
 									<ul>
-										<li>
+										<li class="tooltip-container">
 											<a href="https://www.github.com/xshlxy" target="_blank">
-												<i  class="fa fa-github" aria-hidden="true"></i>
+												<i  class="fab fa-github" aria-hidden="true"></i>
 											</a>
+											<span class="tooltip">GitHub</span>
 										</li><!-- / li -->
 										
-										<li>
+										<li class="tooltip-container">
 											<a href="https://www.linkedin.com/in/ashley-oliveira" target="_blank">
-												<i  class="fa fa-linkedin" aria-hidden="true"></i>
+												<i  class="fab fa-linkedin" aria-hidden="true"></i>
 											</a>
+											<span class="tooltip">LinkedIn</span>
 										</li><!-- / li -->
 										
+										<li class="tooltip-container">
+											<a href="mailto:ashley.oliveiraa@outlook.com" target="_blank">
+												<i  class="fas fa-envelope icon" aria-hidden="true"></i>
+											</a>
+											<span class="tooltip">Email me</span>
+										</li><!-- / li -->
 										
 										
 									</ul><!-- / ul -->
@@ -516,51 +523,52 @@
 				<h2>certifications</h2>
 			</div>
 			<div class="certifications-area">
-				<div class="owl-nav">
-					<button class="owl-prev"><i class="fas fa-chevron-left"></i></button>
-				</div>
+				
 				<div class="container">
-					<div class="owl-carousel owl-theme" id="client">
+					<div  id="certifications">
 						<div class="item">
 							<a href="https://coursera.org/verify/LH36QBLXYAJK" target="_blank">
-								<img src="assets/images/clients/ibm-logo.png" alt="Certification 1 Logo" />
+								<img src="assets/images/clients/ibm-logo.png" alt="IBM Logo" class="cert-icon"/>
+								<p class="name">Introduction to Cloud Computing</p>
 							</a>
 							
 						</div><!--/.item-->
 						<div class="item">
 							<a href="https://coursera.org/verify/24T35CJCCB2F" target="_blank">
-								<img src="assets/images/clients/ibm-logo.png" alt="Certification 2 Logo" />
+								<img src="assets/images/clients/ibm-logo.png" alt="IBM Logo" class="cert-icon"/>
+								<p class="name">Introduction to Web Development with HTML, CSS, JavaScript</p>
 							</a>
 							
 						</div><!--/.item-->
 						<div class="item">
 							<a href="https://coursera.org/verify/DKC57SJUQSWN" target="_blank">
-								<img src="assets/images/clients/ibm-logo.png" alt="Certification 3 Logo" />
+								<img src="assets/images/clients/ibm-logo.png" alt="IBM Logo" class="cert-icon"/>
+								<p class="name">Getting Started with Git and GitHub</p>
 							</a>
 							
 						</div><!--/.item-->
 						<div class="item">
 							<a href="https://freecodecamp.org/certification/xshlxy/responsive-web-design" target="_blank">
-								<img src="assets/images/clients/fcc-logo.png" alt="Certification 4 Logo" />
+								<i class="fab fa-free-code-camp"></i>
+								<p class="name">Responsive Web Design</p>
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="https://www.linkedin.com/learning/certificates/56159e1fb453f958f983871006e992438572099565b0eac02250a1faf44df6e9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BhodQVxe4RVyGOv4Sp7umxg%3D%3D" target="_blank">
-								<img src="assets/images/clients/linkedin-logo.png" alt="Certification 5 Logo" />
+								<i class="fab fa-linkedin" ></i>
+								<p class="name">HTTP Essential Training</p>
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="https://www.linkedin.com/learning/certificates/841b5fc14a6d75afe914d6b5944161bc4511b3dfbcffa5e0f25b3961572a93ee?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BhodQVxe4RVyGOv4Sp7umxg%3D%3D" target="_blank">
-								<img src="assets/images/clients/linkedin-logo.png" alt="Certification 6 Logo" />
+								<i class="fab fa-linkedin"  ></i>
+								<p class="name">Git Essential Training</p>
 							</a>
 		
 					</div><!--/.owl-carousel-->
 					
 				</div><!--/.container-->
-				<!-- Navigation Buttons -->
-				<div class="owl-nav">
-					<button class="owl-next"><i class="fas fa-chevron-right"></i></button>
-				</div>
+				
 			</div><!--/.clients-area-->
 
 		</section><!--/.certs-->
@@ -622,10 +630,12 @@
 				$("#client").owlCarousel({ 
 					loop: true,
 					margin: 10,
-					nav: false,
 					autoplay: false,
 					mouseDrag: true,
 					touchDrag: true,
+					dots: true,
+					nav: false
+		
 					
 				});
 			});
