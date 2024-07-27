@@ -185,15 +185,23 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
+
 .welcome-hero{
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:cover;
-    background-position: center;
     height:890px;
+
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    background: #1f2c6c;
 }
 .welcome-hero:before{
     position:absolute;
@@ -203,8 +211,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     background:rgba(31,44,108,.65);
     width:100%;
     height:100%;
+    z-index:-4;
 }
 
+.header-text{
+    position: relative;
+    z-index:1;
+    color:#fff;
+}
 /*.header-text-area*/
 .header-text h2 {
     color: #fff;
@@ -717,10 +731,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 
 
-/*hm-foot-icon*/
-.hm-foot-icon {
-   
-}
+
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
     color: #636a82;
@@ -789,4 +800,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+
 /*========================Thank you=================
