@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   publisher: 'Ashley Oliveira',
   icons: {
     icon: [
-      { url: `${basePath}/xshlxy.png` },
-      { url: `${basePath}/xshlxy.png`, type: 'image/png' }
+      { url: `${basePath}/favicon.ico` },
+      { url: `${basePath}/favicon.ico`, type: 'image/x-icon' }
     ],
     apple: [
-      { url: `${basePath}/xshlxy.png` },
-      { url: `${basePath}/xshlxy.png`, type: 'image/png' }
+      { url: `${basePath}/favicon.ico` },
+      { url: `${basePath}/favicon.ico`, type: 'image/x-icon' }
     ]
   },
   openGraph: {
@@ -79,7 +79,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://xshlxy.github.io/personal-portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#e6a8d7" />
-        <link rel="icon" href={`${basePath}/xshlxy.png`} />
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
       </head>
       <body className={inter.className}>
         {children}

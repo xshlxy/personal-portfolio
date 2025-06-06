@@ -4,8 +4,16 @@ import styles from '../../styles/ProjectDetail.module.css';
 import '../../styles/globals.css';
 import { motion } from 'framer-motion';
 import { basePath } from '../../utils/constants';
+import { useRef, useState } from 'react';
 
 const CardsAgainstConfusion = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
   return (
     <>
       <Header />
@@ -43,7 +51,9 @@ const CardsAgainstConfusion = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <video
-            className={styles.gif}
+            ref={videoRef}
+            onPlay={handlePlay}
+            className={`${styles.gif} ${isPlaying ? styles.videoPlaying : ''}`}
             controls
             loop
             playsInline

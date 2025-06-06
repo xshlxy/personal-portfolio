@@ -146,7 +146,9 @@
   width: 100%;
   max-width: 450px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* increased pop */
+  filter: brightness(1.03) contrast(1.03);
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 .caption {
@@ -163,7 +165,7 @@
 }
 
 .gif::-webkit-media-controls-panel {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .gif::-webkit-media-controls-play-button {
@@ -196,4 +198,10 @@
   line-height: 1.6;
   color: var(--color-text);
   font-weight: normal;
+}
+
+.videoPlaying {
+  filter: brightness(1.1) contrast(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
