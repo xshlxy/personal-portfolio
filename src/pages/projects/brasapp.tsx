@@ -49,10 +49,10 @@ const BrasApp = () => {
             playsInline
             poster={`${basePath}/images/projects/brasapp.png`}
           >
-            <source src={``} type="video/mp4" />
+            <source src={"not available"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <p className={styles.caption}>I don&apos;t want to spoil the app so the video is not available. But the app will be available soon.</p>
+          <p className={styles.caption}>I don&apos;t want to spoil the app, so the video is not available. But the app will be out soon.</p>
         </motion.div>
 
         <motion.section 

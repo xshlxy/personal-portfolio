@@ -29,10 +29,10 @@ const Header = () => {
   };
 
   const handleProjectsClick = () => {
-    if (!isProjectsOpen) {
-      scrollToSection('projects');
-    }
-    setIsProjectsOpen(!isProjectsOpen);
+    scrollToSection('projects');
+    setTimeout(() => {
+      setIsProjectsOpen((prev) => !prev);
+    }, 100); // allows scroll to happen first
   };
 
   return (
@@ -76,7 +76,7 @@ const Header = () => {
         </div>
         <button onClick={() => scrollToSection('skills')} className={styles.link}>Skills</button>
         <button onClick={() => scrollToSection('education')} className={styles.link}>Education</button>
-        <button onClick={() => scrollToSection('contact')} className={styles.link}>Contact</button>
+        <button onClick={() => scrollToSection('connect')} className={styles.link}>Connect</button>
       </nav>
     </header>
   );
