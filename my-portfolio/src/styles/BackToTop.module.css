@@ -1,0 +1,33 @@
+.backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.backToTop:hover {
+  background-color: white;
+  color: var(--color-accent);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.3);
+}
+
+@media (max-width: 768px) {
+  .backToTop {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+} 

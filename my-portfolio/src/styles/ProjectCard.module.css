@@ -1,0 +1,29 @@
+.card {
+    background-color: var(--card-bg, white);
+    color: var(--card-text, #111);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card a {
+    color: var(--accent, #6366F1);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

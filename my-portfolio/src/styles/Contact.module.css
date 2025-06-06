@@ -1,0 +1,164 @@
+.contact {
+    padding: 4rem 2rem;
+    background-color: var(--color-indigo);
+    color: var(--color-mint);
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact p {
+    color: var(--color-mint);
+    margin-bottom: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form button {
+    background-color: var(--color-pink-red);
+    color: var(--color-black);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .form button:hover {
+    opacity: 0.9;
+  }
+  
+.connect {
+  padding: 6rem 2rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photoContainer {
+  margin-bottom: 2rem;
+}
+
+.photoWrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.photoWrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center;
+}
+
+.connect h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-bg-light);
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: var(--color-bg);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+@media (max-width: 768px) {
+  .connect {
+    padding: 4rem 1.5rem;
+  }
+
+  .connect h2 {
+    font-size: 2rem;
+  }
+
+  .photoWrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .links {
+    gap: 1.5rem;
+  }
+
+  .link {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+  

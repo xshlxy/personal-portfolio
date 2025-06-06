@@ -1,0 +1,389 @@
+.education {
+  padding: 6rem 2rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.education h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--color-text);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.educationItem {
+  background-color: var(--color-card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+
+.educationItem h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.section {
+  background-color: var(--color-card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+
+.section h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+}
+
+.sectionTitle {
+  text-align: center;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.75rem 0;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+.coursework, .certifications {
+  margin-top: 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader h3 {
+  color: var(--color-text);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.coursework h3, .certifications h3 {
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.coursework {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.course {
+  background: var(--color-card-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--color-accent-rgb), 0.25);
+  border-color: var(--color-accent);
+}
+
+.course h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.course p {
+  margin: 0 0 0.75rem 0;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification {
+  background: var(--color-card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certification:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--color-accent-rgb), 0.25);
+  border-color: var(--color-accent);
+}
+
+.certification h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.certification p {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.certification .date {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.skill {
+  background: var(--color-background);
+  color: var(--color-text);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid var(--color-border);
+  transition: background-color 0.2s ease;
+}
+
+.skill:hover {
+  background: var(--color-card-bg);
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.cert {
+  background: var(--color-card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--color-accent-rgb), 0.25);
+  border-color: var(--color-accent);
+}
+
+.cert h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.cert p {
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.issuer {
+  font-style: italic;
+  margin: 0.25rem 0 !important;
+}
+
+.date {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 !important;
+}
+
+.degree {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--color-card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.degree h3 {
+  margin: 0 0 0.75rem 0;
+  color: var(--color-text);
+  font-size: 1.4rem;
+}
+
+.major {
+  margin: 0.25rem 0;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.minor {
+  margin: 0.25rem 0;
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.date, .gpa {
+  margin: 0.25rem 0;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.honors {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.honors h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.honors ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.honors li {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.honors li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.certLink {
+  display: inline-block;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0.75rem 0;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--color-accent);
+  transition: all 0.2s ease;
+}
+
+.certLink:hover {
+  color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 4rem 1rem;
+  }
+
+  .education h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .coursework,
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+
+  .courseGrid, .certGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .degree {
+    padding: 1.25rem;
+  }
+  
+  .degree h3 {
+    font-size: 1.2rem;
+  }
+  
+  .major {
+    font-size: 1rem;
+  }
+  
+  .minor {
+    font-size: 0.95rem;
+  }
+} 
