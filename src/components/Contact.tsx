@@ -4,6 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import styles from '../styles/Contact.module.css';
 
 const Contact = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   const socialLinks = [
     {
       name: 'LinkedIn',
@@ -33,7 +34,7 @@ const Contact = () => {
         >
           <div className={styles.photoWrapper}>
             <Image
-              src="/images/headshot.jpg"
+              src={`${basePath}/images/headshot.jpg`}
               alt="Ashley Oliveira"
               width={200}
               height={200}

@@ -16,6 +16,7 @@ interface Project {
 
 const Projects = () => {
   const router = useRouter();
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   const projects: Project[] = [
     {
       title: "BRASApp",
@@ -23,7 +24,7 @@ const Projects = () => {
       github: "https://github.com/gobrasa",
       tech: ["React Native", "Expo", "Django", "TypeScript", "HTML/CSS", "Python", "Git"],
       link: "/projects/brasapp",
-      image: "/images/projects/brasapp.png"
+      image: `${basePath}/images/projects/brasapp.png`
     },
     {
       title: "BRASA Portal",
@@ -31,7 +32,7 @@ const Projects = () => {
       github: "https://github.com/gobrasa",
       tech: ["React.js", "Next.js", "Django", "TypeScript", "HTML/CSS", "Python", "Git"],
       link: "/projects/brasa-portal",
-      image: "/images/projects/brasa-portal.png",
+      image: `${basePath}/images/projects/brasa-portal.png`,
       live: "https://portalbrasa.gobrasa.org/"
     },
     {
@@ -40,7 +41,7 @@ const Projects = () => {
       github: "https://github.com/katrinars/flashcard-app",
       tech: ["React", "Next.js", "Firebase", "Stripe", "OpenAI"],
       link: "/projects/cards-against-confusion",
-      image: "/images/projects/cards-project.png"
+      image: `${basePath}/images/projects/cards-project.png`
     },
     
   ];
