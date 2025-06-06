@@ -1,31 +1,64 @@
-# personal-portfolio
+# Personal Portfolio
 
-My personal landing page to showcase some of my work
+A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my work and experience in software development and economics.
 
-## Template Info:
+## Features
 
-Name: Browny - Free Bootstrap One Page Portfolio Resume Tempalte
-Version: 1.0
-Author: ThemeSINE
-Website: https://www.themesine.com/
+- 🎨 Modern, responsive design
+- ⚡ Built with Next.js and TypeScript
+- 🎭 Smooth animations using Framer Motion
+- 📱 Mobile-first approach
+- 🔍 SEO optimized
+- 🎯 Interactive project showcases
+- 📊 Skills and experience visualization
+- 📝 Dynamic content management
 
-## Changelog:
+## Tech Stack
 
-Version 1.0 14-05-2018
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Styling:** CSS Modules
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Deployment:** GitHub Pages
 
-- initial release
+## Getting Started
 
-## Credits:
+1. Clone the repository:
 
-- Twitter Bootstrap http://getbootstrap.com
-- jQuery http://jquery.org
-- Modernizr https://modernizr.com/
-- Sticky.js http://stickyjs.com/
-- JQuery easing https://github.com/gdsmith/jquery.easing
-- Bootsnav http://bootsnav.danurstrap.com/
-- Pexels https://www.pexels.com/
-- Unsplash https://unsplash.com/
+```bash
+git clone https://github.com/xshlxy/personal-portfolio.git
+```
 
-## License:
+2. Install dependencies:
 
-This template is under Free License - https://www.themesine.com/license/
+```bash
+npm install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## Project Structure
+
+```
+src/
+├── app/          # App router pages and layouts
+├── components/   # React components
+├── styles/       # CSS modules
+├── pages/        # Project detail pages
+└── public/       # Static assets
+```
+
+## Deployment
+
+The site is deployed on GitHub Pages at [https://xshlxy.github.io/personal-portfolio](https://xshlxy.github.io/personal-portfolio).
+
+## License
+
+MIT License - feel free to use this template for your own portfolio!
