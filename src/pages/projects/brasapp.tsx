@@ -5,8 +5,6 @@ import '../../styles/globals.css';
 import { motion } from 'framer-motion';
 
 const BrasApp = () => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
-  
   return (
     <>
       <Header />
@@ -48,7 +46,7 @@ const BrasApp = () => {
             controls
             loop
             playsInline
-            poster={`${basePath}/images/projects/brasapp.png`}
+            poster="/images/projects/brasapp.png"
           >
             <source src="" type="video/mp4" />
             Your browser does not support the video tag.
@@ -68,7 +66,7 @@ const BrasApp = () => {
             BRASApp is the official mobile platform developed for BRASA conferences and members, designed to enhance the student experience through seamless access to personalized event content and organization resources.
           </p>
           <p>
-          This app replaces an older web-based tool previously used by the organization. I have been involved in BRASApp from the very beginning. After identifying the limitations of the old system, we conducted stakeholder interviews to better understand the needs of students, board members, and partners. Following this, we presented a comprehensive proposal to BRASA leadership, which was approved. From there, I led the frontend development, collaborating closely with our development team to build a more modern, scalable, and intuitive experience. We're now in the final stages of the MVP, and BRASApp will soon be launched on the Apple App Store and Google Play Store to gather user feedback ahead of its official use at our next conference.
+          This app replaces an older web-based tool previously used by the organization. I have been involved in BRASApp from the very beginning. After identifying the limitations of the old system, we conducted stakeholder interviews to better understand the needs of students, board members, and partners. Following this, we presented a comprehensive proposal to BRASA leadership, which was approved. From there, I led the frontend development, collaborating closely with our development team to build a more modern, scalable, and intuitive experience. We’re now in the final stages of the MVP, and BRASApp will soon be launched on the Apple App Store and Google Play Store to gather user feedback ahead of its official use at our next conference.
           </p>
           <p>
             The current MVP version includes core features such as:
