@@ -5,6 +5,8 @@ import '../../styles/globals.css';
 import { motion } from 'framer-motion';
 
 const CardsAgainstConfusion = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
+  
   return (
     <>
       <Header />
@@ -46,34 +48,32 @@ const CardsAgainstConfusion = () => {
             controls
             loop
             playsInline
-            poster="/images/projects/cards-project.png"
+            poster={`${basePath}/images/projects/cards-project.png`}
           >
-            <source src="/videos/c-a-p-demo.mp4" type="video/mp4" />
+            <source src={`${basePath}/videos/c-a-p-demo.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
 
-        <motion.section 
-          className={styles.section}
+        <motion.section
+          className={styles.description}
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <h2>Description</h2>
+          <h2>About the Project</h2>
           <p>
-            Cards Against Confusion is a task management app with a flashcard-inspired UI. It uses AI to generate task lists based on user input, allowing users to plan their tasks with or without details. The app provides a detailed task list with descriptions and tasks ranked by priority.
+            Cards Against Confusion is a task management application that combines the familiar interface of flashcards with the power of AI to help users organize and complete their tasks more effectively. The app uses a unique card-based UI that makes task management more engaging and intuitive.
           </p>
         </motion.section>
 
-        <motion.section 
-          className={styles.section}
+        <motion.section
+          className={styles.techStack}
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
         >
-          <h2>Skills & Tools</h2>
+          <h2>Technologies Used</h2>
           <ul>
             <motion.li
               initial={{ opacity: 0, scale: 0.8 }}
