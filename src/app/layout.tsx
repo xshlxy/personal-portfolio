@@ -1,5 +1,8 @@
 import "../styles/globals.css";
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Ashley Oliveira | Software Engineer & Data Scientist',
@@ -24,6 +27,16 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ashley Oliveira' }],
   creator: 'Ashley Oliveira',
   publisher: 'Ashley Oliveira',
+  icons: {
+    icon: [
+      { url: '/xshlxy.png' },
+      { url: '/xshlxy.png', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/xshlxy.png' },
+      { url: '/xshlxy.png', type: 'image/png' }
+    ]
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -67,7 +80,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#e6a8d7" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>
+      <body className={inter.className}>
         {children}
       </body>
     </html>
