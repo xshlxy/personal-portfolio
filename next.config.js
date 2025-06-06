@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -11,7 +14,7 @@ const nextConfig = {
     ],
   },
   basePath: process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '',
-  trailingSlash: true,
-}
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/personal-portfolio/' : '',
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig;
