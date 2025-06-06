@@ -72,13 +72,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   return (
     <html lang="en">
       <head>
         <link rel="canonical" href="https://xshlxy.github.io/personal-portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#e6a8d7" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${basePath}/xshlxy.png`} />
       </head>
       <body className={inter.className}>
         {children}

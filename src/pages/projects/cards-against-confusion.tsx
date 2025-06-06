@@ -5,6 +5,7 @@ import '../../styles/globals.css';
 import { motion } from 'framer-motion';
 
 const CardsAgainstConfusion = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   return (
     <>
       <Header />
@@ -46,9 +47,9 @@ const CardsAgainstConfusion = () => {
             controls
             loop
             playsInline
-            poster="/images/projects/cards-project.png"
+            poster={`${basePath}/images/projects/cards-project.png`}
           >
-            <source src="/videos/c-a-p-demo.mp4" type="video/mp4" />
+            <source src={`${basePath}/videos/c-a-p-demo.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>

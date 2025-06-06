@@ -5,6 +5,8 @@ import '../../styles/globals.css';
 import { motion } from 'framer-motion';
 
 const BrasaPortal = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
+
   return (
     <>
       <Header />
@@ -46,9 +48,9 @@ const BrasaPortal = () => {
             controls
             loop
             playsInline
-            poster="/images/projects/brasa-portal.png"
+            poster={`${basePath}/images/projects/brasa-portal.png`}
           >
-            <source src="/videos/brasa-portal-demo.mp4" type="video/mp4" />
+            <source src={`${basePath}/videos/brasa-portal-demo.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <p className={styles.caption}>No video available. But the portal is live and can be accessed <a href="https://portalbrasa.gobrasa.org/" target="_blank" rel="noopener noreferrer">here</a>.</p>
