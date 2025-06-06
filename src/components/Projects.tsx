@@ -3,6 +3,7 @@ import styles from '../styles/Projects.module.css';
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { basePath } from '../utils/constants';
 
 interface Project {
   title: string;
@@ -16,7 +17,6 @@ interface Project {
 
 const Projects = () => {
   const router = useRouter();
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   const projects: Project[] = [
     {
       title: "BRASApp",

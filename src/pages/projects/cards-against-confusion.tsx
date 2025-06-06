@@ -3,9 +3,9 @@ import Header from '../../components/Header';
 import styles from '../../styles/ProjectDetail.module.css';
 import '../../styles/globals.css';
 import { motion } from 'framer-motion';
+import { basePath } from '../../utils/constants';
 
 const CardsAgainstConfusion = () => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   return (
     <>
       <Header />

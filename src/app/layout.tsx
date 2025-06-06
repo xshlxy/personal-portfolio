@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { basePath } from '../utils/constants';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,12 +30,12 @@ export const metadata: Metadata = {
   publisher: 'Ashley Oliveira',
   icons: {
     icon: [
-      { url: '/xshlxy.png' },
-      { url: '/xshlxy.png', type: 'image/png' }
+      { url: `${basePath}/xshlxy.png` },
+      { url: `${basePath}/xshlxy.png`, type: 'image/png' }
     ],
     apple: [
-      { url: '/xshlxy.png' },
-      { url: '/xshlxy.png', type: 'image/png' }
+      { url: `${basePath}/xshlxy.png` },
+      { url: `${basePath}/xshlxy.png`, type: 'image/png' }
     ]
   },
   openGraph: {
@@ -72,7 +73,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   return (
     <html lang="en">
       <head>

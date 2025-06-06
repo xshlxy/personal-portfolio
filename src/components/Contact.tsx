@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import styles from '../styles/Contact.module.css';
+import { basePath } from '../utils/constants';
 
 const Contact = () => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
   const socialLinks = [
     {
       name: 'LinkedIn',
