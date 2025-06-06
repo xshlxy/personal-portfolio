@@ -74,8 +74,9 @@ const Header = () => {
             )}
           </AnimatePresence>
         </div>
-        <button onClick={() => scrollToSection('contact')} className={styles.link}>Contact</button>
+        <button onClick={() => scrollToSection('skills')} className={styles.link}>Skills</button>
         <button onClick={() => scrollToSection('education')} className={styles.link}>Education</button>
+        <button onClick={() => scrollToSection('contact')} className={styles.link}>Contact</button>
       </nav>
     </header>
   );
