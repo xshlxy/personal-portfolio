@@ -48,7 +48,7 @@ const Hero = () => {
             <a href="#projects" className={styles.primaryButton}>
               View My Work
             </a>
-            <a href="#contact" className={styles.secondaryButton}>
+            <a href="#connect" className={styles.secondaryButton}>
               Get in Touch
             </a>
           </motion.div>
